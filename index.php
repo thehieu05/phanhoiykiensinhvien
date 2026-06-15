@@ -1,7 +1,7 @@
 <?php
 include("includes/functions.php");
 
-// Nếu đã đăng nhập -> chuyển hướng
+// Nếu đã đăng nhập ->
 if (!empty($_SESSION['user_id'])) {
     switch ($_SESSION['vai_tro']) {
         case 'admin':      chuyenHuong(SITE_URL . '/admin/'); break;
